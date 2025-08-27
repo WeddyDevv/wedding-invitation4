@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Romantic Wedding Color Palette */
+    --background: 355 100% 98%;
+    --foreground: 345 15% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 345 15% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 345 15% 25%;
+
+    /* Romantic Rose Primary */
+    --primary: 345 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 345 95% 85%;
+
+    /* Blush Secondary */
+    --secondary: 15 55% 90%;
+    --secondary-foreground: 345 15% 25%;
+
+    /* Soft Muted Tones */
+    --muted: 355 25% 95%;
+    --muted-foreground: 345 10% 55%;
+
+    /* Gold Accent */
+    --accent: 45 85% 75%;
+    --accent-foreground: 345 15% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 345 25% 88%;
+    --input: 345 25% 94%;
+    --ring: 345 85% 65%;
+
+    /* Custom Wedding Variables */
+    --gradient-romantic: linear-gradient(135deg, hsl(345 95% 85%), hsl(15 85% 90%), hsl(45 75% 88%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 75%), hsl(35 75% 70%));
+    --shadow-romantic: 0 10px 40px -10px hsl(345 85% 65% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(345 50% 70% / 0.2);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Romantic Wedding Styles */
+  .romantic-gradient {
+    background: var(--gradient-romantic);
+  }
+  
+  .gold-gradient {
+    background: var(--gradient-gold);
+  }
+  
+  .heart-decoration::before {
+    content: "♥";
+    @apply text-primary text-lg absolute -top-2 -left-3 animate-pulse;
+  }
+  
+  .floating-hearts {
+    position: relative;
+  }
+  
+  .floating-hearts::before,
+  .floating-hearts::after {
+    content: "♥";
+    position: absolute;
+    @apply text-primary/30 animate-bounce;
+    animation-duration: 3s;
+  }
+  
+  .floating-hearts::before {
+    top: -10px;
+    left: -20px;
+    animation-delay: 0s;
+  }
+  
+  .floating-hearts::after {
+    bottom: -10px;
+    right: -20px;
+    animation-delay: 1.5s;
+  }
+  
+  .ornate-border {
+    border: 2px solid hsl(var(--accent));
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ornate-border::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradient-gold);
+    border-radius: var(--radius);
+    z-index: -1;
+  }
+}
