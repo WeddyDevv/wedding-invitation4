@@ -7,7 +7,7 @@ const WhenWhereSection = () => {
       date: "Monday, 12 Apr, 2025",
       time: "After Namaz-e-Asr",
       location: "Wazir Ali Masjid, Lal Darwaza, Hyderabad",
-      image: "/public/lovable-uploads/masjid.jpg",
+      image: "/lovable-uploads/masjid.jpg",
       gradient: "from-rose-100/50 to-pink-100/50"
     },
     {
@@ -15,7 +15,7 @@ const WhenWhereSection = () => {
       date: "Monday, 12 Apr, 2025",
       time: "1:00 PM - 2:30 PM",
       location: "4857 Washington Ave, Manchester, Kentucky 39495",
-      image: "/public/lovable-uploads/vintage.png",
+      image: "/lovable-uploads/vintage.png",
       gradient: "from-amber-100/50 to-orange-100/50"
     },
     {
@@ -23,7 +23,7 @@ const WhenWhereSection = () => {
       date: "Monday, 12 Apr, 2025",
       time: "7:00 PM - 10:00 PM",
       location: "4857 Washington Ave, Manchester, Kentucky 39495",
-      image: "/public/lovable-uploads/king.jpg",
+      image: "/lovable-uploads/king.jpg",
       gradient: "from-purple-100/50 to-violet-100/50"
     }
   ];
