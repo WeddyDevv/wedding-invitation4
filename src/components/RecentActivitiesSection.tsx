@@ -2,37 +2,37 @@ const RecentActivitiesSection = () => {
   const activities = [
     {
       id: 1,
-      image: "/public/lovable-uploads/q1.jpg",
+      image: "/lovable-uploads/q1.jpg",
       alt: "Happy couple embracing on their wedding day",
       span: "col-span-1 row-span-2"
     },
     {
       id: 2,
-      image: "/public/lovable-uploads/q2.jpg",
+      image: "/lovable-uploads/q2.jpg",
       alt: "Wedding ring exchange ceremony",
       span: "col-span-2 row-span-1"
     },
     {
       id: 3,
-      image: "/public/lovable-uploads/q3.jpg",
+      image: "/lovable-uploads/q3.jpg",
       alt: "Wedding rings on hands",
       span: "col-span-1 row-span-1"
     },
     {
       id: 4,
-      image: "/public/lovable-uploads/q4.jpg",
+      image: "/lovable-uploads/q4.jpg",
       alt: "Bridal bouquet arrangement",
       span: "col-span-1 row-span-1"
     },
     {
       id: 5,
-      image: "/public/lovable-uploads/q6.jpg",
+      image: "/lovable-uploads/q6.jpg",
       alt: "Wedding reception table setting",
       span: "col-span-2 row-span-1"
     },
     {
       id: 6,
-      image: "/public/lovable-uploads/q5.avif",
+      image: "/lovable-uploads/q5.avif",
       alt: "Outdoor wedding ceremony setup",
       span: "col-span-1 row-span-2"
     }

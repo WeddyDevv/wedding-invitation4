@@ -6,28 +6,28 @@ const ServicesSection = () => {
     {
       id: 1,
       title: "Engagement ",
-      image: "public/lovable-uploads/engage.jpeg",
+      image: "/lovable-uploads/engage.jpeg",
       alt: "Couple walking on beach for pre-wedding photography",
       p:"12-03-2026"
     },
     {
       id: 2,
       title: "Haldi Ceremony",
-      image: "public/lovable-uploads/haldi.jpg",
+      image: "/lovable-uploads/haldi.jpg",
       alt: "Wedding ceremony setup with flowers and decorations",
       p1:"02-12-2026"
     },
     {
       id: 3,
       title: "Mahendi Ceremony",
-      image: "public/lovable-uploads/mahendi.webp",
+      image: "/lovable-uploads/mahendi.webp",
       alt: "Elegant indoor wedding venue with couple",
       p2:"04-12-2026"
     },
     {
       id: 4,
       title: "Sachak Ceremony",
-      image: "public/lovable-uploads/sachak.jpg",
+      image: "/lovable-uploads/sachak.jpg",
       alt: "Beautiful outdoor wedding setup in garden",
       p3:"06-12-2026"
     }
